@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/main.sass",
+        "../sass/block/_settings.sass",
+        "../sass/block/_variables.sass"
+    ],
+    "names": [],
+    "file": "main.css"
+}
