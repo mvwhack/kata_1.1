@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,50 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="js/main.js" defer></script>
 </head>
+
 <body>
-  
+  <section class="block">
+    <div class="block__left">
+      <img src="img/logo.svg" alt="Icon: logo" class="logo">
+    </div>
+    <div class="block__right">
+      <div class="right">
+        <div class="rigth__label"></div>
+        <div class="right__social"></div>
+        <div class="right__form">
+          <form action="#" class="form">
+            <div class="form__inputs">
+              <input type="email" class="form__email">
+              <input type="phone" class="form__phone">
+            </div>
+            <div class="form__question">
+              <h2 class="form__question-title">What type of investor are you?</h2>
+              <p class="form__question-subtitle">Select the type investor you are below</p>
+              <div class="form-question-check">
+                <label class="form__label">
+                  <input type="radio" name="question-check">Individual
+                </label>
+                <label class="form__label">
+                  <input type="radio" name="question-check">Business
+                </label>
+                <label class="form__label">
+                  <input type="radio" name="question-check">IRA
+                </label>
+                <label class="form__label">
+                  <input type="radio" name="question-check">Trust
+                </label>
+              </div>
+            </div>
+            <div class="form__agree">
+              <input type="checkbox" class="form__agree-check">
+              <p class="form__agree-text">I agree to the terms and receiving notification from iintoo <a href="#"
+                  class="form__agree-link">View full terms</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
