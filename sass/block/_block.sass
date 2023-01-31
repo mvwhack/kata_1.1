@@ -1,0 +1,28 @@
+.container
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1150px;
+  height: 800px;
+  margin: -400px 0 0 -575px;
+  background: #f0f0f0;
+
+  
+.block
+  height: 100vh;
+  background-color: $main_bg;
+  &__wrapper
+    display: flex
+    height: 100%
+  &__left
+    background-image: url('/img/bg.jpg');
+    background-size: 100% 100%;
+    object-fit: cover
+    width: 50%
+    height: 100%
+  &__logo
+    width: 200px
+    height: 50px
+    margin: 25px 0 0 25px
+  &__right
+    width: 50%
