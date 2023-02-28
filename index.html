@@ -19,28 +19,50 @@
         </div>
         <div class="block__right">
           <div class="right">
-            <div class="right__label"></div>
-            <div class="right__social"></div>
+            <div class="right__label">
+              <h1 class="right__label-h1">Get iintoo it today</h1>
+              <h2 class="right__label-h2">There is no charge or obligation upon registration.</h2>
+            </div>
+            <div class="right__social">
+              <button class="right__social-button right__social-fb">
+                <img src="img/facebook.svg" alt="Icon: Facebook">
+                Register with Facebook</button>
+              <button class="right__social-button right__social-li">
+                <img src="img/linkedin.svg" alt="Icon: LinkedIn">
+                Register with LinkedIn</button>
+            </div>
+            <div class="right__delimiter">
+              <hr>OR
+              <hr>
+            </div>
             <div class="right__form">
               <form action="#" class="form">
                 <div class="form__inputs">
-                  <input type="email" class="form__email">
-                  <input type="phone" class="form__phone">
+                  <div class="form__group">
+                    <input type="email" class="form__input" id="email">
+                    <label for="email" class="form__label">Email</label>
+                  </div>
+                  <div class="form__group">
+                    <input type="phone" class="form__input" id="phone">
+                    <label for="phone" class="form__label">Phone</label>
+                  </div>
                 </div>
                 <div class="form__question">
-                  <h2 class="form__question-title">What type of investor are you?</h2>
-                  <p class="form__question-subtitle">Select the type investor you are below</p>
-                  <div class="form-question-check">
-                    <label class="form__label">
+                  <div class="form__question-query">
+                    <h2 class="form__question-title">What type of investor are you?</h2>
+                    <p class="form__question-subtitle">Select the type investor you are below</p>
+                  </div>
+                  <div class="form__question-check">
+                    <label class="form__question-label">
                       <input type="radio" name="question-check">Individual
                     </label>
-                    <label class="form__label">
+                    <label class="form__question-label">
                       <input type="radio" name="question-check">Business
                     </label>
-                    <label class="form__label">
+                    <label class="form__question-label">
                       <input type="radio" name="question-check">IRA
                     </label>
-                    <label class="form__label">
+                    <label class="form__question-label">
                       <input type="radio" name="question-check">Trust
                     </label>
                   </div>
@@ -50,6 +72,7 @@
                   <p class="form__agree-text">I agree to the terms and receiving notification from iintoo <a href="#"
                       class="form__agree-link">View full terms</a></p>
                 </div>
+                <button class="form__btn">Create Account</button>
               </form>
             </div>
           </div>

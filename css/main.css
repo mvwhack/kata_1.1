@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -347,7 +348,8 @@ template {
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  color: #2A4A5C;
 }
 
 .container {
@@ -355,18 +357,37 @@ body {
   margin: auto;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  letter-spacing: 0;
+}
+
 .container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 1150px;
-  height: 800px;
-  margin: -400px 0 0 -575px;
-  background: #f0f0f0;
+  background: #FFFFFF;
 }
 
 .block {
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
   background-color: #EFF6FF;
 }
 
@@ -375,7 +396,10 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 1000px;
 }
 
 .block__left {
@@ -385,16 +409,227 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 50%;
-  height: 100%;
 }
 
 .block__logo {
-  width: 200px;
+  width: 180px;
   height: 50px;
   margin: 25px 0 0 25px;
 }
 
 .block__right {
   width: 50%;
+}
+
+.right {
+  padding: 50px;
+}
+
+.right__label {
+  padding-bottom: 40px;
+}
+
+.right__label-h1 {
+  font-weight: 500;
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+
+.right__label-h2 {
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.right__social {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right__social-button {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 190px;
+}
+
+.right__social-button > img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.right__social-fb {
+  background-color: #255A9B;
+}
+
+.right__social-li {
+  background-color: #0076B6;
+}
+
+.right__delimiter {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.right__delimiter > hr {
+  width: 130px;
+  height: 1px;
+  border: none;
+  background-color: #7B8A92;
+}
+
+.form__inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.form__group {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__label {
+  position: absolute;
+  width: 100%;
+  padding: 5px 0 0 5px;
+  font-size: 12px;
+  color: #2A4A5C;
+  opacity: 0.5;
+}
+
+.form__input {
+  height: 50px;
+  padding: 20px 5px 5px 5px;
+  border: 1px solid #EEEEEE;
+  outline: none;
+  width: 190px;
+}
+
+.form__question {
+  padding-bottom: 80px;
+}
+
+.form__question-title {
+  font-weight: 500;
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+
+.form__question-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.form__question-query {
+  padding-bottom: 40px;
+}
+
+.form__question-check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__question-label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.form__question-label > input {
+  margin-right: 10px;
+}
+
+.form__agree {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+}
+
+.form__agree > input {
+  margin-right: 10px;
+}
+
+.form__agree-text {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.form__agree-link {
+  color: #3698FB;
+}
+
+.form__btn {
+  color: #FFFFFF;
+  background-color: #3698FB;
+  width: 250px;
+  padding: 10px 0;
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  outline: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
