@@ -61,6 +61,8 @@
         width: 15px
         height: 15px
         margin-right: 10px
+      &:hover
+        opacity: 0.8
     &-fb
       background-color: $button-fb;
     &-li
@@ -85,6 +87,10 @@
     position: relative
     display: flex
     flex-direction: column
+    & input:hover
+      border-left: 2px solid $button_create
+    & input:focus
+      border-left: 2px solid $button_create
   &__label
     position: absolute
     width: 100%
@@ -114,12 +120,57 @@
     display: flex
     justify-content: space-between
   &__question-label
+    position: relative;
     display: flex
     align-items: center
     font-weight: 400
     font-size: 16px
-    & > input
-      margin-right: 10px
+    cursor: pointer;
+    span
+      display: flex
+      align-items: center
+      padding: 0.375em 0.75em 0.375em 0.375em;
+      border-radius: 99em
+      transition: 0.25s ease
+      &:hover
+        background-color: mix(#fff, $button_create, 84%)
+      &:before
+        display: flex
+        flex-shrink: 0
+        content: ""
+        background-color: #fff
+        width: 1em
+        height: 1em
+        border-radius: 50%
+        margin-right: 0.375em
+        transition: 0.25s ease
+        box-shadow: inset 0 0 0 0.125em $button_create
+  &__question-label-input
+    position: absolute
+    left: -9999px
+    &:checked + span
+      background-color: mix(#fff, $button_create, 84%)
+      &:before
+        box-shadow: inset 0 0 0 0.2705em $button_create
+  
+  &__question-label
+    display: inline-block
+  &__question-label .tooltiptext
+    margin-left: 9px
+    width: 320px
+    visibility: hidden
+    background-color: #FFF
+    border-radius: 4px
+    border: 1px solid #aeaeae
+    box-shadow: 5px 5px 5px #aeaeae;
+    position: absolute
+    z-index: 1
+    padding: 5px
+    opacity: 0
+    transition: opacity 0.5s
+  &__question-label:hover .tooltiptext
+    visibility: visible;
+    opacity: 1;
   &__agree
     display: flex
     align-items: center
@@ -140,3 +191,5 @@
     border-radius: 5px
     outline: none
     cursor: pointer
+    &:hover
+      opacity: 0.9
